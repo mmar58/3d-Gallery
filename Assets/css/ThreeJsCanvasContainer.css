@@ -1,0 +1,47 @@
+.canvas-container {
+    position: relative;
+    /* Key for positioning header */
+    width: 700px;
+    /* Adjust to your desired size */
+    height: 400px;
+    background-color: #b5c4d2;
+}
+
+.canvas-container canvas {
+    width: 100% !important;
+    height: 100% !important;
+    display: block;
+}
+.canvas-container h1{
+    text-align: center;
+}
+
+/* Header Animation Start */
+#myCanvasHeader {
+    color: transparent;
+    /* Make text initially transparent */
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.animated-letter {
+    color: black;
+    /* Set the animated letter color */
+    font-size: 20px;
+    /* Increase size for animated letters */
+}
+  @keyframes letterAnimation {
+    from {
+      color: transparent;
+      font-size: 18px;
+    }
+    to {
+      color: black;
+      font-size: 22px;
+    }
+  }
+
+  .animated-letter {
+    animation: letterAnimation 0.5s ease-in-out forwards; /* Apply animation */
+  }
+  /* Header Animation End */
